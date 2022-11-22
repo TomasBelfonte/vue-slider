@@ -37,8 +37,8 @@ const app = createApp({
     methods: {
         goPrev( ) {
             if(this.tabindex === 0) {
-                // this.tabindex = slides[i].length -1;
-                this.tabindex = 4;
+                this.tabindex = this.slides.length -1;
+                // this.tabindex = 4;
             } else {
                 this.tabindex--;
             }
@@ -46,9 +46,9 @@ const app = createApp({
         },
 
         goNext() {
-            // if (this.tabindex = slides[i].length -1;)
-            if (this.tabindex === 4) {
-                this.tabindex = 0
+            if (this.tabindex === this.slides.length -1) {
+            this.tabindex = 0;
+            // if (this.tabindex === 4) 
             } else {
                 this.tabindex++;
             }
@@ -59,4 +59,3 @@ const app = createApp({
     
 }).mount('#app');
 
-console.log(slides);
