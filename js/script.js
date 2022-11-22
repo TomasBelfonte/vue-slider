@@ -33,13 +33,26 @@ const app = createApp({
         }       
     },
 
+    
     methods: {
         goPrev( ) {
-            this.tabindex--;
+            if(this.tabindex === 0) {
+                // this.tabindex = slides[i].length -1;
+                this.tabindex = 4;
+            } else {
+                this.tabindex--;
+            }
+            
         },
 
         goNext() {
-            this.tabindex++;
+            // if (this.tabindex = slides[i].length -1;)
+            if (this.tabindex === 4) {
+                this.tabindex = 0
+            } else {
+                this.tabindex++;
+            }
+            
         }
 
     }
