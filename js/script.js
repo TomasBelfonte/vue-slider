@@ -38,7 +38,6 @@ const app = createApp({
         goPrev( ) {
             if(this.tabindex === 0) {
                 this.tabindex = this.slides.length -1;
-                // this.tabindex = 4;
             } else {
                 this.tabindex--;
             }
@@ -48,14 +47,11 @@ const app = createApp({
         goNext() {
             if (this.tabindex === this.slides.length -1) {
             this.tabindex = 0;
-            // if (this.tabindex === 4) 
             } else {
                 this.tabindex++;
             }
             
-        }
-
-
+        },
 
     }
     

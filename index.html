@@ -38,19 +38,19 @@
                         <img :src="thumbimages" alt="">
                     </div> -->
 
-                    <div class="thumb" :class="(tabindex === 0) ? 'active' : ''">
+                    <div class="thumb" :class="(tabindex === 0) ? 'active' : ''" @click = "tabindex">
                         <img :src="slides[0].image" alt="Svezia" />
                     </div>
-                    <div class="thumb" :class="(tabindex === 1) ? 'active' : ''">
+                    <div class="thumb" :class="(tabindex === 1) ? 'active' : ''" @click="tabindex">
                         <img :src="slides[1].image" alt="Ratchet & Clank" />
                     </div>
-                    <div class="thumb" :class="(tabindex === 2) ? 'active' : ''">
+                    <div class="thumb" :class="(tabindex === 2) ? 'active' : ''" @click="tabindex">
                         <img :src="slides[2].image" alt="Fortnite" />
                     </div>
-                    <div class="thumb" :class="(tabindex === 3) ? 'active' : ''">
+                    <div class="thumb" :class="(tabindex === 3) ? 'active' : ''" @click="tabindex">
                         <img :src="slides[3].image" alt="Stray" />
                     </div>
-                    <div class="thumb" :class="(tabindex === 4) ? 'active' : ''">
+                    <div class="thumb" :class="(tabindex === 4) ? 'active' : ''"@click="tabindex">
                         <img :src="slides[4].image" alt="Avengers" />
                     </div>
                 </div>
