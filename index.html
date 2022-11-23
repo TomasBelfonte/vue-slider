@@ -33,9 +33,9 @@
                     <div class="prev" @click="goPrev"></div>
                     <div class="next" @click="goNext"></div>
 
-                    <!-- <div class="thumb" v-for="thumbimages in slides[i].image" 
+                    <!-- <div class="thumb" v-for="(thumbimages, i) in slides.image" 
                         :class="(i === tabindex) ? 'active' : ''"> 
-                        <img :src="thumbimages" alt="">
+                        <img :src="thumbimages.image" alt="">
                     </div> -->
 
                     <div class="thumb" :class="(tabindex === 0) ? 'active' : ''" @click = "tabindex">
